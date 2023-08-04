@@ -51,13 +51,9 @@ class Solution:
                         print(letter)
 
         print(strs)
-
         if was_printed == 0:
             print("nu uh")
 
-common_prefix = "letter"
-
-print(common_prefix)
 
 solution = Solution()
 

@@ -33,18 +33,36 @@ class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
 
         numbers_in_num = 0
+        for e, number in enumerate(nums):
+            print(e, number)
 
-        while numbers_in_num < len(nums):
-            results = target - nums[numbers_in_num]
-            numbers_in_num += 1
-            if results in nums:
-                array_place = numbers_in_num - 1
-                solution_list.extend([array_place])
-            if len(solution_list) > 2:
-                solution_list.pop(0)
 
-nums = [2,7,11,15]
-target = 9
+            skip = e
+            sum = target
+
+            for n in nums:
+                if skip > 0:
+                    skip -= 1
+                    continue
+
+
+
+                sum = sum - n
+                print(f"Result: {sum}")
+
+                if sum == 0:
+                    print(f"AAAAAAAAAA {e} {n}")
+
+
+
+                #if target - n == 0
+                print(f" n {n}")
+
+            solution_list.append(e)
+            # return solution_list
+
+nums = [3,2,4]
+target = 6
 solution_list = []
 
 solution = Solution()

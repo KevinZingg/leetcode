@@ -37,19 +37,27 @@ class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         strs = ["flower","flow","flight"] #["dog","racecar","car"]
         first_word = strs[0]
+        was_printed = 0
 
         for first_word_letter in first_word:
             amount_of_items = 0
 
             for word in strs:
                 amount_of_items += 1
+
                 for letter in word:
                     if letter == first_word_letter and amount_of_items == len(strs):
+                        was_printed += 1
                         print(letter)
-                    elif amount_of_items < len(strs):
-                        print("There is no common prefix among the input strings.")
 
         print(strs)
+
+        if was_printed == 0:
+            print("nu uh")
+
+common_prefix = "letter"
+
+print(common_prefix)
 
 solution = Solution()
 

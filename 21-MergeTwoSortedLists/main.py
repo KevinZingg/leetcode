@@ -43,4 +43,4 @@ class Solution:
         else:
             tail.next = list2
 
-        return ListNode
+        return dummy.next

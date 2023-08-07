@@ -11,6 +11,7 @@ class Solution:
                 temp_list = temp_list[::-1]
 
         s = temp_s.join(temp_list)
+        print(s)
         return s
 
 s = "string"

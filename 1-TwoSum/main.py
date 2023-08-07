@@ -35,12 +35,14 @@ class Solution:
         numbers_in_num = 0
         for e, number in enumerate(nums):
             print(e, number)
+            print("-----")
 
 
             skip = e
             sum = target
 
             for n in nums:
+                print(f"bruh bruh bruh{n}")
                 if skip > 0:
                     skip -= 1
                     continue
@@ -48,10 +50,11 @@ class Solution:
 
 
                 sum = sum - n
-                print(f"Result: {sum}")
-
                 if sum == 0:
                     print(f"AAAAAAAAAA {e} {n}")
+                print(f"Result: {sum}")
+
+
 
 
 

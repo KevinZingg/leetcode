@@ -17,7 +17,6 @@ class Solution:
             temp_list.append(len(dict[i]))
         for i in temp_list:
             result[i-1]+=1
-            print(result)
         return result
 
 

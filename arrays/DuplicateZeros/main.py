@@ -10,10 +10,10 @@ class Solution:
                 test_list.append(0)
 
 
-        # Modify the original list in place
+        
         arr[:] = test_list[:len(arr)]
 
-        return arr  # This return is optional since you're modifying the original list in place
+        return arr  
 
 arr = [1,0,2,3,0,4,5,0]
 solution = Solution()

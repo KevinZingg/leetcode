@@ -22,6 +22,7 @@ class Solution:
                 stack.pop()
 
         backtrack(0,0)
+        print(res)
         return res
 
 n = 3

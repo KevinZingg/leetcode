@@ -13,3 +13,9 @@ target = 7
 
 solution = Solution()
 solution.combinationSum(candidates, target)
+
+'''
+https://www.youtube.com/watch?v=GBKI9VSKdGg
+
+fucked up
+'''
